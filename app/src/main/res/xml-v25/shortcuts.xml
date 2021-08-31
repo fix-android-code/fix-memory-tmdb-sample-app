@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcut_movie_filter"
+        android:shortcutId="movie_shortcut"
+        android:shortcutShortLabel="@string/movie_title">
+        <intent
+            android:action="movie"
+            android:targetClass="com.example.suki.ui.main.MainActivity"
+            android:targetPackage="com.example.suki" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/shortcut_profile"
+        android:shortcutId="profile_shortcut"
+        android:shortcutShortLabel="@string/title_profile">
+        <intent
+            android:action="profile"
+            android:targetClass="com.example.suki.ui.main.MainActivity"
+            android:targetPackage="com.example.suki" />
+    </shortcut>
+</shortcuts>

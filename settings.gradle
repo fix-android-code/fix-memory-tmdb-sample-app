@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Fix Memory TMDb Sample App"

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">@color/custom_pine_glade</color>
+    <color name="colorPrimaryDark">#26418f</color>
+    <color name="colorPrimaryLight" tools:keep="@color/colorPrimaryLight">#8e99f3</color>
+    <color name="colorAccent">@color/custom_pine_glade</color>
+    <color name="colorText">#000000</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorToolbar">#ffffff</color>
+    <color name="colorCard">#ffffff</color>
+    <color name="colorDivider" tools:keep="@color/colorDivider">#1fffffff</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="yellowStar">#F1C40F</color>
+
+    <color name="md_black_1000">#000000</color>
+    <color name="custom_oriental_pink">#c68c96</color>
+    <color name="custom_pine_glade">#bcd19a</color>
+    <color name="custom_gray_nickel">#c7c7c4</color>
+    <color name="custom_aot">#a79682</color>
+    <color name="downy">#6db9cf</color>
+    <color name="japonica">#d6806b</color>
+
+</resources>

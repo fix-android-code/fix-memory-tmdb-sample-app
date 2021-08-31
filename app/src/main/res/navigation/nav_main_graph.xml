@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_graph"
+    app:startDestination="@id/movie_navigation">
+
+    <fragment
+        android:id="@+id/movie_navigation"
+        android:name="com.example.suki.movie.filter.ui.fragment.MovieFilterHostFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_movie_filter_host">
+        <argument
+            android:name="type"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/playgroundOneFragment"
+        android:name="com.example.suki.playground.fragment.PlaygroundOneFragment"
+        android:label="PlaygroundOneFragment" />
+
+</navigation>

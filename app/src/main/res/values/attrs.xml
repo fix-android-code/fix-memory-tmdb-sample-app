@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorToolbar" format="color" />
+    <attr name="colorCard" format="color" />
+    <attr name="cardStrokeWidth" format="dimension" />
+    <attr name="mainToolbarStyle" format="reference" />
+    <attr name="colorDisabled" format="reference|color" />
+    <attr name="themeSmallFont" format="reference"/>
+    <attr name="themeCardColor" format="reference"/>
+    <fraction name="listImageRatio">0.25</fraction>
+
+    <attr name="themeRegularBoldFont" format="reference"/>
+
+</resources>

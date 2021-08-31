@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="default_padding">8dp</dimen>
+
+    <dimen name="empty_image_view_width">120dp</dimen>
+    <dimen name="empty_image_view_height">120dp</dimen>
+
+    <dimen name="iconPadding">4dp</dimen>
+    <dimen name="iconSmallSize">18dp</dimen>
+
+    <dimen name="marginClose">4dp</dimen>
+    <dimen name="marginSmall">8dp</dimen>
+    <dimen name="marginNormal">12dp</dimen>
+
+    <dimen name="elevationNormal">4dp</dimen>
+
+    <!-- Font-->
+
+    <dimen name="fontNormal">14sp</dimen>
+    <dimen name="fontSmall">12sp</dimen>
+</resources>

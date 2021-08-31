@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/marginNormal"
+    android:layout_marginTop="@dimen/marginClose"
+    android:layout_marginEnd="@dimen/marginNormal"
+    android:layout_marginBottom="@dimen/marginSmall"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_aot_and_border"
+        android:padding="@dimen/marginSmall">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/movieFilterImageGuidelines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@fraction/listImageRatio" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/movieFilterImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="2:3"
+            app:layout_constraintEnd_toStartOf="@id/movieFilterImageGuidelines"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/movieFilterTitleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginNormal"
+            android:textColor="@color/custom_gray_nickel"
+            android:textSize="@dimen/fontNormal"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/movieFilterImageGuidelines"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/movieFilterCreatorTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginNormal"
+            android:layout_marginTop="@dimen/marginClose"
+            android:textColor="@color/custom_gray_nickel"
+            android:textSize="@dimen/fontSmall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/movieFilterImageGuidelines"
+            app:layout_constraintTop_toBottomOf="@id/movieFilterTitleTextView"
+            tools:text="Creators Name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/movieFilterYearTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginNormal"
+            android:layout_marginTop="@dimen/marginClose"
+            android:textColor="@color/custom_gray_nickel"
+            android:textSize="@dimen/fontSmall"
+            app:layout_constraintStart_toEndOf="@id/movieFilterImageGuidelines"
+            app:layout_constraintTop_toBottomOf="@id/movieFilterCreatorTextView"
+            tools:text="Year" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/movieFilterFormatImageView"
+            android:layout_width="@dimen/iconPadding"
+            android:layout_height="@dimen/iconPadding"
+            android:layout_marginStart="@dimen/marginClose"
+            app:layout_constraintBottom_toBottomOf="@id/movieFilterYearTextView"
+            app:layout_constraintStart_toEndOf="@id/movieFilterYearTextView"
+            app:layout_constraintTop_toTopOf="@id/movieFilterYearTextView"
+            app:srcCompat="@drawable/ic_filled_circle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/movieFilterFormatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginClose"
+            android:layout_marginTop="@dimen/marginClose"
+            android:textColor="@color/custom_gray_nickel"
+            android:textSize="@dimen/fontSmall"
+            app:layout_constraintStart_toEndOf="@id/movieFilterFormatImageView"
+            app:layout_constraintTop_toBottomOf="@id/movieFilterCreatorTextView"
+            tools:text="Format" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/movieFilterCountImageView"
+            android:layout_width="@dimen/iconPadding"
+            android:layout_height="@dimen/iconPadding"
+            android:layout_marginStart="@dimen/marginClose"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/movieFilterFormatTextView"
+            app:layout_constraintStart_toEndOf="@id/movieFilterFormatTextView"
+            app:layout_constraintTop_toTopOf="@id/movieFilterFormatTextView"
+            app:srcCompat="@drawable/ic_filled_circle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/movieFilterCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginClose"
+            android:layout_marginTop="@dimen/marginClose"
+            android:textColor="@color/custom_gray_nickel"
+            android:textSize="@dimen/fontSmall"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/movieFilterCountImageView"
+            app:layout_constraintTop_toBottomOf="@id/movieFilterCreatorTextView" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/movieFilterScoreLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginNormal"
+            android:layout_marginTop="@dimen/marginSmall"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/movieFilterImageGuidelines"
+            app:layout_constraintTop_toBottomOf="@id/movieFilterFormatTextView">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/movieFilterScoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/marginClose"
+                android:gravity="center_vertical"
+                android:text="@string/default_score_count"
+                android:textColor="@color/custom_gray_nickel"
+                android:textSize="@dimen/fontNormal"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_star_filled"
+                app:drawableTint="@color/downy" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/movieFilterFavoriteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:drawablePadding="@dimen/marginClose"
+                android:gravity="center_vertical"
+                android:text="@string/default_favorite_count"
+                android:textColor="@color/custom_gray_nickel"
+                android:textSize="@dimen/fontNormal"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_heart_outline"
+                app:drawableTint="@color/custom_oriental_pink" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movieFilterGenreFlexboxRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginNormal"
+            android:layout_marginTop="@dimen/marginNormal"
+            android:orientation="horizontal"
+            app:layoutManager="com.google.android.flexbox.FlexboxLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/movieFilterImageGuidelines"
+            app:layout_constraintTop_toBottomOf="@+id/movieFilterScoreLinearLayout" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/movieFilterUserStatus"
+            android:layout_width="@dimen/iconSmallSize"
+            android:layout_height="@dimen/iconSmallSize"
+            android:layout_marginStart="@dimen/marginNormal"
+            app:layout_constraintBottom_toBottomOf="@id/movieFilterUserStatusTextView"
+            app:layout_constraintStart_toEndOf="@id/movieFilterImageGuidelines"
+            app:layout_constraintTop_toTopOf="@id/movieFilterUserStatusTextView"
+            android:tint="@color/japonica"
+            app:srcCompat="@drawable/ic_filled_circle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/movieFilterUserStatusTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginSmall"
+            android:layout_marginTop="@dimen/marginNormal"
+            android:textColor="@color/custom_gray_nickel"
+            android:textSize="@dimen/fontSmall"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/movieFilterUserStatus"
+            app:layout_constraintTop_toBottomOf="@id/movieFilterGenreFlexboxRecyclerView"
+            tools:text="Status" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/custom_pine_glade"
+            app:cardElevation="@dimen/elevationNormal"
+            app:contentPadding="@dimen/marginClose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/movieFilterRankTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/fontNormal"
+                android:textStyle="bold"
+                tools:text="20" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

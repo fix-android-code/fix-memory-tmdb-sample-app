@@ -1,0 +1,126 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Fix Memory TMDb Sample App</string>
+    <string name="movie_title">Movie</string>
+    <string name="title_profile">Profile</string>
+    <string name="cancel">Cancel</string>
+    <string name="watching">Watching</string>
+    <string name="reading">Reading</string>
+    <string name="completed">Completed</string>
+    <string name="on_hold">On Hold</string>
+    <string name="dropped">Dropped</string>
+    <string name="ptw">Plan to Watch</string>
+    <string name="ptr">Plan to Read</string>
+    <string name="unknown">Unknown</string>
+    <string name="error_server">Error connecting to server</string>
+    <string name="tv">TV</string>
+    <string name="ova">OVA</string>
+    <string name="ona">ONA</string>
+    <string name="movie">Movie</string>
+    <string name="special">Special</string>
+    <string name="music">Music</string>
+    <string name="one_shot">One Shot</string>
+    <string name="manhwa">Manhwa</string>
+    <string name="novel">Novel</string>
+    <string name="doujinshi" translatable="false">Doujinshi</string>
+    <string name="airing">Airing</string>
+    <string name="finished">Finished</string>
+    <string name="on_hiatus">On Hiatus</string>
+    <string name="winter">Winter</string>
+    <string name="spring">Spring</string>
+    <string name="summer">Summer</string>
+    <string name="fall">Fall</string>
+    <string name="original">Original</string>
+    <string name="light_novel">Light Novel</string>
+    <string name="visual_novel">Visual Novel</string>
+    <string name="game">Game</string>
+    <string name="score_apalling">1 Appalling</string>
+    <string name="score_horrible">2 Horrible</string>
+    <string name="score_very_bad">3 Very Bad</string>
+    <string name="score_bad">4 Bad</string>
+    <string name="score_average">5 Average</string>
+    <string name="score_fine">6 Fine</string>
+    <string name="score_good">7 Good</string>
+    <string name="score_very_good">8 Very Good</string>
+    <string name="score_great">9 Great</string>
+    <string name="score_masterpiece">10 Masterpiece</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="not_yet_aired">Not Yet Aired</string>
+    <string name="publishing">Publishing</string>
+    <string name="all">All</string>
+    <string name="filter_title">Title</string>
+    <string name="filter_score">Score</string>
+    <string name="filter_last_updated">Last updated</string>
+    <string name="filter" tools:ignore="MissingTranslation">filter</string>
+    <string name="ok" tools:ignore="MissingTranslation">OK</string>
+    <string name="genre_action" tools:ignore="MissingTranslation">Action</string>
+    <string name="genre_adventure" tools:ignore="MissingTranslation">Adventure</string>
+    <string name="genre_cars" tools:ignore="MissingTranslation">Cars</string>
+    <string name="genre_comedy" tools:ignore="MissingTranslation">Comedy</string>
+    <string name="genre_dementia" tools:ignore="MissingTranslation">Dementia</string>
+    <string name="genre_demons" tools:ignore="MissingTranslation">Demons</string>
+    <string name="genre_drama" tools:ignore="MissingTranslation">Drama</string>
+    <string name="genre_ecchi" tools:ignore="MissingTranslation" tools:keep="@string/genre_ecchi">Ecchi</string>
+    <string name="genre_fantasy" tools:ignore="MissingTranslation">Fantasy</string>
+    <string name="genre_game" tools:ignore="MissingTranslation">Game</string>
+    <string name="genre_harem" tools:ignore="MissingTranslation">Harem</string>
+    <string name="genre_hentai" tools:ignore="MissingTranslation">Hentai</string>
+    <string name="genre_historical" tools:ignore="MissingTranslation">Historical</string>
+    <string name="genre_horror" tools:ignore="MissingTranslation">Horror</string>
+    <string name="genre_josei" tools:ignore="MissingTranslation">Josei</string>
+    <string name="genre_kids" tools:ignore="MissingTranslation">Kids</string>
+    <string name="genre_magic" tools:ignore="MissingTranslation">Magic</string>
+    <string name="genre_martial_arts" tools:ignore="MissingTranslation">Martial Arts</string>
+    <string name="genre_mecha" tools:ignore="MissingTranslation">Mecha</string>
+    <string name="genre_military" tools:ignore="MissingTranslation">Military</string>
+    <string name="genre_music" tools:ignore="MissingTranslation">Music</string>
+    <string name="genre_mystery" tools:ignore="MissingTranslation">Mystery</string>
+    <string name="genre_parody" tools:ignore="MissingTranslation">Parody</string>
+    <string name="genre_police" tools:ignore="MissingTranslation">Police</string>
+    <string name="genre_psychological" tools:ignore="MissingTranslation">Psychological</string>
+    <string name="genre_romance" tools:ignore="MissingTranslation">Romance</string>
+    <string name="genre_samurai" tools:ignore="MissingTranslation">Samurai</string>
+    <string name="genre_school" tools:ignore="MissingTranslation">School</string>
+    <string name="genre_sci_fi" tools:ignore="MissingTranslation">Sci-Fi</string>
+    <string name="genre_seinen" tools:ignore="MissingTranslation">Seinen</string>
+    <string name="genre_shoujo" tools:ignore="MissingTranslation">Shoujo</string>
+    <string name="genre_shoujo_ai" tools:ignore="MissingTranslation">Shoujo Ai</string>
+    <string name="genre_shounen" tools:ignore="MissingTranslation">Shounen</string>
+    <string name="genre_shounen_ai" tools:ignore="MissingTranslation">Shounen Ai</string>
+    <string name="genre_slice_of_life" tools:ignore="MissingTranslation">Slice of Life</string>
+    <string name="genre_space" tools:ignore="MissingTranslation">Space</string>
+    <string name="genre_sports" tools:ignore="MissingTranslation">Sports</string>
+    <string name="genre_superpower" tools:ignore="MissingTranslation">Super Power</string>
+    <string name="genre_supernatural" tools:ignore="MissingTranslation">Supernatural</string>
+    <string name="genre_thriller" tools:ignore="MissingTranslation">Thriller</string>
+    <string name="genre_vampire" tools:ignore="MissingTranslation">Vampire</string>
+    <string name="genre_yaoi" tools:ignore="MissingTranslation">Yaoi</string>
+    <string name="genre_yuri" tools:ignore="MissingTranslation">Yuri</string>
+    <string name="relation_prequel" tools:ignore="MissingTranslation">Prequel</string>
+    <string name="relation_sequel" tools:ignore="MissingTranslation">Sequel</string>
+    <string name="relation_summary" tools:ignore="MissingTranslation">Summary</string>
+    <string name="relation_alternative_version" tools:ignore="MissingTranslation">Alternative version</string>
+    <string name="relation_other" tools:ignore="MissingTranslation" tools:keep="@string/relation_other">Other</string>
+    <string name="relation_side_story" tools:ignore="MissingTranslation">Side story</string>
+    <string name="relation_alternative_setting" tools:ignore="MissingTranslation">Alternative setting</string>
+    <string name="relation_spin_off" tools:ignore="MissingTranslation">Spin-off</string>
+    <string name="adaptation" tools:ignore="MissingTranslation" tools:keep="@string/adaptation">Adaptation</string>
+    <string name="manhua">Manhua</string>
+    <string name="discontinued">Discontinued</string>
+    <string name="parent_story">Parent story</string>
+    <string name="full_story" translatable="false">Full story</string>
+    <string name="more" translatable="false">More</string>
+    <string name="loading_state_retry_button_text">LSRetry</string>
+    <string name="whoops_something_went_wrong">Whoops</string>
+    <string name="retry">Retry</string>
+    <string name="movie_filter_popular">Popular Movie</string>
+    <string name="movie_filter_upcoming">Upcoming Movie</string>
+    <string name="movie_filter_top_rated">Top Rated Movie</string>
+    <string name="default_score_count">_</string>
+    <string name="default_favorite_count">_</string>
+</resources>
