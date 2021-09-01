@@ -11,6 +11,8 @@ import androidx.fragment.app.viewModels
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.airbnb.lottie.LottieCompositionFactory
+import com.airbnb.lottie.LottieDrawable
 import com.example.suki.R
 import com.example.suki.common.util.Constant.STATUS_WATCHING
 import com.example.suki.databinding.FragmentMovieFilterBinding
@@ -87,8 +89,17 @@ class MovieFilterFragment : Fragment(), MovieFilterPagingDataAdapter.OnItemClick
     }
 
     private fun setPagingRecyclerView() {
+        val lottieDrawable = LottieDrawable()
+        LottieCompositionFactory.fromRawRes(requireContext(), R.raw.image_loader)
+            .addListener { lottieComposition ->
+                lottieDrawable.composition = lottieComposition
+                lottieDrawable.repeatCount = LottieDrawable.INFINITE
+                lottieDrawable.playAnimation()
+            }
+
         movieFilterPagingDataAdapter = MovieFilterPagingDataAdapter(
-            this
+            this,
+            lottieDrawable
         )
         val pagingHeaderAdapter =
             MovieFilterLoadStateAdapter { movieFilterPagingDataAdapter.retry() }

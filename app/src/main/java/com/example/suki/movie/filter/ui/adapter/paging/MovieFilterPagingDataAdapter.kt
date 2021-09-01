@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.airbnb.lottie.LottieCompositionFactory
 import com.airbnb.lottie.LottieDrawable
 import com.bumptech.glide.Glide
 import com.example.suki.R
@@ -16,7 +15,8 @@ import com.example.suki.movie.filter.ui.adapter.MovieFilterGenreRecyclerViewAdap
 import timber.log.Timber
 
 class MovieFilterPagingDataAdapter(
-    private val listener: OnItemClickListener
+    private val listener: OnItemClickListener,
+    private val lottieDrawable: LottieDrawable
 ) : PagingDataAdapter<MovieFilterModel, MovieFilterPagingDataAdapter.MovieFilterViewHolder>(
     MovieFilterDiffUtil()
 ) {
@@ -66,13 +66,6 @@ class MovieFilterPagingDataAdapter(
                         Timber.d("genre: $genre")
                     }
                 })
-            val lottieDrawable = LottieDrawable()
-            LottieCompositionFactory.fromRawRes(itemView.context, R.raw.image_loader)
-                .addListener { lottieComposition ->
-                    lottieDrawable.composition = lottieComposition
-                    lottieDrawable.repeatCount = LottieDrawable.INFINITE
-                    lottieDrawable.playAnimation()
-                }
 
             binding.apply {
                 Glide
